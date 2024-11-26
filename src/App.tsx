@@ -41,11 +41,10 @@ export const App: React.FC = () => {
 
   const onSelected = useCallback(
     (person: Person): void => {
-      console.log('Selected person:', person);
       setName(person.name);
       setAppliedPerson('');
       setSelectedPerson(person);
-      setIsDropdownActive(false); // Close dropdown on selection
+      setIsDropdownActive(false);
     },
     [],
   );
